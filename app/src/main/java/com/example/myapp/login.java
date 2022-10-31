@@ -84,7 +84,7 @@ public class login extends AppCompatActivity {
                         startActivity(main);
                     }
                     else{
-                        Toast toast = Toast.makeText(getApplicationContext(), "로그인 실패.", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(getApplicationContext(), "비밀번호가 맞지 않습니다.", Toast.LENGTH_SHORT);
                         toast.show();
                     }
                 }

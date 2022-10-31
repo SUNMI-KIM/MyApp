@@ -38,9 +38,9 @@ public class register extends AppCompatActivity {
                 String id = idText.getText().toString();
                 String passWord = passWordText.getText().toString();
                 try {
-                    File file = new File("/data/user/0/com.example.myapp/files/data.txt");
+                    File file = new File(getFilesDir(), "data.txt");
                     String s;
-                    BufferedReader r = new BufferedReader(new FileReader("/data/user/0/com.example.myapp/files/data.txt"));
+                    BufferedReader r = new BufferedReader(new FileReader(file));
                     while((s = r.readLine()) != null){
                         profile.map.put(s.split(" ")[0], s.split(" ")[1]);
                     }
