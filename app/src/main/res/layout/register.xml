@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/register_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textVisiblePassword"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_id"
+        android:ems="10"
+        android:hint="password"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/register_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:ems="10"
+        android:hint="email address"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/register_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_address"
+        android:text="register"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보 이용약관에 동의하신다면 동의를 눌러주십시오 \n\n비밀번호는 다음을 만족하시오. \n1. 5자 이상 10자 이하 \n2.숫자와 영어의 조합일 것"
+        android:layout_margin="10dp"/>
+
+    <CheckBox
+        android:id="@+id/register_checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동의"
+        android:layout_margin="10dp"/>
+</LinearLayout>
