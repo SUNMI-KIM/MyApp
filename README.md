@@ -1,6 +1,8 @@
 # 모바일 프로그래밍 개인과제
+- SDK 버전 12
 
 ## 고양이 게시판
+
 
 ### 1. 첫번째 페이지 (login) - login.xml
 - 사용 layout : RealtiveLayout
@@ -8,6 +10,8 @@
 - register 버튼을 누를 시 회원가입 창으로 이동
 - lookAround 버튼을 누르면 로그인 하지 않은 상태로 세번째 페이지로 이동
 - lookAround 버튼을 로그인 된 상태로 누르면 로그아웃 되고 세번째 페이지로 이동
+![로그인](https://user-images.githubusercontent.com/84156897/198945279-d865d99f-4a72-4bfc-b7f9-09c9429acd08.png)
+
 
 ### 2. 두번째 페이지 (register) - register.xml
 - 사용 layout : linearLayout
@@ -15,6 +19,8 @@
 - 비밀번호는 5자리 이상, 10자 이하 / 숫자와 영어의 조합
 - ridio 동의 버튼에 눌러야만 회원가입 가능
 - 기존 정보를 불러와 id 중복 검사 기능
+![회원가입](https://user-images.githubusercontent.com/84156897/198945325-8181657d-6d31-4279-9cc7-93fff4fb1416.png)
+
 
 ### 3. 세번째 페이지 (main) - activity_main.xml
 - 사용 layout :   ConstructLayout, linearLayout
@@ -22,9 +28,13 @@
 - 회원정보 버튼
 * 로그인이 되어있을때 네번째 페이지로 이동
   - 로그인이 안 되어있을때 alertDialog를 통해 회원가입 창으로 이동(yes) 혹은 세번째 페이지에서 머무를 것인지 물어봄(no)
+![멩ㄴ](https://user-images.githubusercontent.com/84156897/198945352-7c475fe8-c82d-4923-b95f-e7be1483402c.png)
+
   
 ### 4. 네번째 페이지 (profile_screen) - profile.xml
 - 내정보와 현재 로그인 되어있는 사람의 id를 보여줌
+![내정보](https://user-images.githubusercontent.com/84156897/198945368-c0a21e57-c7c8-4aae-a1c9-33b62fb5138b.png)
+
 
 ### 5. profile.java
 - 전역변수로 로그인한 사람의 정보 저장
